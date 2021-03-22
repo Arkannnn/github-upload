@@ -1,0 +1,42 @@
+.hero {
+    background: url(../img/background/hero-bg.jpg) center center / cover no-repeat;
+    position: relative;
+}
+
+.hero__content {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.hero__desc {
+    color: $red;
+    font-family: lifehack;
+    font-size: 65px;
+    font-weight: 500;  
+    
+    &--green {
+        color:$green;
+    }
+    
+}
+
+.hero__text {
+     display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-top: 4%;
+
+}
+
+.hero__container {
+    flex: 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__picture {
+    margin-right: 5%;
+}

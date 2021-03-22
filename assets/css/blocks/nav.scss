@@ -1,0 +1,39 @@
+.nav {
+    margin-right: 15px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item:last-child .nav__link::after {
+    display: none;
+}
+
+.nav__link {
+    color: $white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: $green;
+      
+    }
+
+    &::after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        display: block;
+        background: $white;
+        border-radius: 50%;
+        margin: 0 15px;         
+    }
+
+
+}
+
