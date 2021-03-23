@@ -2,14 +2,14 @@
     @return $px / 16px + 0rem;
 }
 
-@mixin tablets {
-    @media (max-width: $tablets) {
-        @content;
-    }
-}
+// @mixin tablets {
+//     @media (max-width: $tablets) {
+//         @content;
+//     }
+// }
 
-@mixin phones {
-    @media (max-width: $phones) {
-        @content;
-    }
-}
+// @mixin phones {
+//     @media (max-width: $phones) {
+//         @content;
+//     }
+// }

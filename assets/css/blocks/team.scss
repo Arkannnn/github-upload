@@ -29,7 +29,7 @@
 }
 
 .team__item {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     //display: flex;
 
     &--active {
@@ -53,7 +53,7 @@
     font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 2%;
-    font-size: 14px;
+    font-size: rem(14px);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -62,10 +62,10 @@
         content: " ";
         width: 0;
         height: 0;
-        border: 6px solid transparent;
+        border: rem(6px) solid transparent;
         border-bottom: none;
         border-top-color: $yellow;
-        margin-right: 20px;
+        margin-right: rem(20px);
     }
 
     
@@ -83,10 +83,10 @@
 .team__item-pic {
     border-radius: 50%;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     flex-shrink: 0;
-    margin: 0 20px;
+    margin: 0 rem(20px);
 }
 
 .team__item-img {
@@ -96,7 +96,7 @@
 }
 
 .team__item-job {
-    margin-bottom: 7px;
+    margin-bottom: rem(7px);
     font-weight: 700;
 }
 

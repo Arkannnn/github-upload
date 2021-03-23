@@ -12,7 +12,7 @@
 .hero__desc {
     color: $red;
     font-family: lifehack;
-    font-size: 65px;
+    font-size: rem(65px);
     font-weight: 500;  
     
     &--green {
