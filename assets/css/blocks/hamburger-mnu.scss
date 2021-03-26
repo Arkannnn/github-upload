@@ -1,0 +1,29 @@
+.gamburger-mnu {
+    position: relative;
+    display: none;
+    @include for-tablet-landscape-up {
+        display: flex;
+    }
+}
+
+.hamburger-mnu__link-elem {
+    background: $white;
+    width: rem(25px);
+    height: rem(5px);
+    border-radius: rem(5px);
+    margin: rem(10px);
+    &:after,
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background: $white;
+        width: rem(25px);
+        height: rem(5px);
+        border-radius: rem(5px);
+    }
+    &:before {
+        top: 0;
+    }
+}

@@ -3,13 +3,40 @@
 }
 
 // @mixin tablets {
-//     @media (max-width: $tablets) {
+//     @media screen and (max-width: $tablets) {
 //         @content;
 //     }
 // }
 
 // @mixin phones {
-//     @media (max-width: $phones) {
+//     @media screen and (max-width: $phones) {
 //         @content;
 //     }
 // }
+
+/// "screen and" можно не писать, screen - значение по умолчанию
+
+@mixin for-tablet-landscape-up {
+    @media (max-width: $tablet-hor) { @content; }
+}
+
+@mixin for-tablet-portrait-up {
+    @media (max-width: $tablet-vert) { @content; }
+}
+
+@mixin for-phone-only {
+    @media (max-width: $phone) { @content; }
+}
+
+
+
+
+
+
+// @mixin for-desktop-up {
+//     @media (min-width: 1200px) { @content; }
+// }
+
+// @mixin for-big-desktop-up {
+//     @media (min-width: 1800px) { @content; }
+//   }

@@ -1,6 +1,21 @@
 html {
     font-size: rem(16px);
-   }
+
+    @include for-tablet-landscape-up {
+        font-size: rem(14px);
+    }
+
+    @include for-tablet-portrait-up {
+        font-size: rem(13px);
+    }
+
+    @include for-phone-only {
+        font-size: rem(12px);
+    }
+}
+   
+
+   
 
 html, body {
     height: 100%;    
@@ -51,11 +66,18 @@ p {
 
 .container {
     margin: 0 auto;
-    width: rem(940px);
+    max-width: rem(940px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    padding: 0 rem(20px);
+
+    @include for-tablet-landscape-up {
+        padding: 0 rem(10px);
+    }
+
+
 
     &--without-align {
         justify-content: initial;        

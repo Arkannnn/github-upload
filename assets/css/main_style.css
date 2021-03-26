@@ -383,6 +383,21 @@ template {
 html {
   font-size: 1rem;
 }
+@media (max-width: 900px) {
+  html {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 0.8125rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 0.75rem;
+  }
+}
 
 html, body {
   height: 100%;
@@ -427,11 +442,17 @@ p {
 
 .container {
   margin: 0 auto;
-  width: 58.75rem;
+  max-width: 58.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  padding: 0 1.25rem;
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 0 0.625rem;
+  }
 }
 .container--without-align {
   justify-content: initial;
@@ -487,14 +508,31 @@ p {
 .header__buttons {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  margin-right: 3%;
+}
+
+.logo__picture {
+  width: 100%;
+  height: 100%;
 }
 
 .nav {
   margin-right: 0.9375rem;
 }
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}
 
 .nav__list {
   display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .nav__item:last-child .nav__link::after {
@@ -521,6 +559,38 @@ p {
   background: #fff;
   border-radius: 50%;
   margin: 0 0.9375rem;
+  flex-shrink: 0;
+}
+
+.gamburger-mnu {
+  position: relative;
+  display: none;
+}
+@media (max-width: 900px) {
+  .gamburger-mnu {
+    display: flex;
+  }
+}
+
+.hamburger-mnu__link-elem {
+  background: #fff;
+  width: 1.5625rem;
+  height: 0.3125rem;
+  border-radius: 0.3125rem;
+  margin: 0.625rem;
+}
+.hamburger-mnu__link-elem:after, .hamburger-mnu__link-elem:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 1.5625rem;
+  height: 0.3125rem;
+  border-radius: 0.3125rem;
+}
+.hamburger-mnu__link-elem:before {
+  top: 0;
 }
 
 .btn {
