@@ -1,15 +1,15 @@
 html {
     font-size: 16px;
 
-    @include for-tablet-landscape-up {
+    @include tablet-landscape-up {
         font-size: rem(14px);
     }
 
-    @include for-tablet-portrait-up {
+    @include tablet-portrait-up {
         font-size: rem(13px);
     }
 
-    @include for-phone-only {
+    @include phone-only {
         font-size: rem(12px);
     }
 }
@@ -33,8 +33,7 @@ body {
     color: $black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    position: relative;
-      
+    position: relative;      
 }
 
 // tag style reset
@@ -56,29 +55,40 @@ p {
     padding: 0;
     margin: 0;
 }
-    
+ 
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
 
 .container {
     margin: 0 auto;
+    width: 100%;
     max-width: 940px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     padding: 0 rem(20px);
+    position: relative;
 
-    @include for-tablet-landscape-up {
-        padding: 0 rem(10px);
+    @include tablet-landscape-up {
+        //padding: 0 rem(10px);
+        //вместо паддингов можно сделать ширину в процентах, будет порезиновей
+        padding: 0;
+        width: 95%;
     }
 
     &--without-align {
         justify-content: initial;        
-    }
-    
+    }    
 }
+
+
 
 .section {
     height: 100vh;
     min-height: rem(650px);
-    // position: relative;
+    position: relative;
 }

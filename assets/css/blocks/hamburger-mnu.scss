@@ -2,7 +2,7 @@
     position: relative;
     display: none;
     margin-left: rem(30px) ;
-    @include for-tablet-landscape-up {
+    @include tablet-landscape-up {
         display: flex;
     }
 }
@@ -12,7 +12,7 @@
     width: rem(25px);
     height: rem(5px);
     border-radius: rem(5px);
-    margin: rem(10px);
+    margin: rem(10px) 0;
     &:after,
     &:before {
         content: "";

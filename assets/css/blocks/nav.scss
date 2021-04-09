@@ -1,7 +1,7 @@
 .nav {
     margin-right: rem(15px);
 
-    @include for-tablet-landscape-up {
+    @include tablet-landscape-up {
         display: none;
     }
 }

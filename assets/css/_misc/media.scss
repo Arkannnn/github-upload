@@ -16,15 +16,15 @@
 
 /// "screen and" можно не писать, screen - значение по умолчанию
 
-@mixin for-tablet-landscape-up {
+@mixin tablet-landscape-up {
     @media (max-width: $tablet-hor) { @content; }
 }
 
-@mixin for-tablet-portrait-up {
+@mixin tablet-portrait-up {
     @media (max-width: $tablet-vert) { @content; }
 }
 
-@mixin for-phone-only {
+@mixin phone-only {
     @media (max-width: $phone) { @content; }
 }
 
