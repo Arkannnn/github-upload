@@ -1,5 +1,5 @@
 html {
-    font-size: rem(16px);
+    font-size: 16px;
 
     @include for-tablet-landscape-up {
         font-size: rem(14px);
@@ -27,14 +27,13 @@ html, body {
 
 body {
     font-family: 'ubuntu', Helvetica, sans-serif;
-    //font-size: rem(16px);
+    font-size: rem(16px);
     line-height: 1.42;
     font-weight: 300;
     color: $black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    //position: relative;
-    //@include ubuntu(); 
+    position: relative;
       
 }
 
@@ -58,15 +57,10 @@ p {
     margin: 0;
 }
     
-.section {
-    height: 100vh;
-    min-height: rem(650px);
-    position: relative;
-}
 
 .container {
     margin: 0 auto;
-    max-width: rem(940px);
+    max-width: 940px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,10 +71,14 @@ p {
         padding: 0 rem(10px);
     }
 
-
-
     &--without-align {
         justify-content: initial;        
     }
     
+}
+
+.section {
+    height: 100vh;
+    min-height: rem(650px);
+    // position: relative;
 }
