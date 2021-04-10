@@ -6,6 +6,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    @include phones {
+        flex-direction: column;
+    }
     
 }
 
@@ -16,11 +20,21 @@
     align-items: center;
     text-align: center;
     margin: 0 1%;
+
+    @include phones {
+        flex-direction: row;
+        text-align: start;
+        align-items: flex-start;
+        margin: 5% 0;    
+    }
 }
 
 .best__item-picture {
     margin-bottom: 10%;
     height: rem(80px);
+    @include phones {
+        margin: 0 5% 0 0;    
+    }
 }
 
 .best__item-img {
@@ -33,6 +47,11 @@
     font-weight: 500;
     line-height: rem(24px);
     margin-bottom: 6%;
+    
+    @include phones{
+        margin-bottom: 4%;
+    }
+
 }
 
 .best__item-desc {

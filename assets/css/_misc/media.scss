@@ -16,27 +16,11 @@
 
 /// "screen and" можно не писать, screen - значение по умолчанию
 
-@mixin tablet-landscape-up {
-    @media (max-width: $tablet-hor) { @content; }
+@mixin tablets {
+    @media (max-width: $tablets) { @content; }
 }
 
-@mixin tablet-portrait-up {
-    @media (max-width: $tablet-vert) { @content; }
+@mixin phones {
+    @media (max-width: $phones) { @content; }
 }
 
-@mixin phone-only {
-    @media (max-width: $phone) { @content; }
-}
-
-
-
-
-
-
-// @mixin for-desktop-up {
-//     @media (min-width: 1200px) { @content; }
-// }
-
-// @mixin for-big-desktop-up {
-//     @media (min-width: 1800px) { @content; }
-//   }

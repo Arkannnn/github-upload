@@ -2,23 +2,42 @@
     color: $yellow;
     font-family: gagalin;
     font-size: rem(72px);
-    font-weight: 400; 
+    line-height: rem(82px);
+    font-weight: 400;
     white-space: nowrap;
-      &--team {
-          margin-bottom: rem(20px);
-      }
+    // text-shadow: $white 1px 1px 0, $white -1px -1px 0, 
+    // $white -1px 1px 0, $white 1px -1px 0; 
+    margin-bottom: 4%;
+
+    @include tablets {
+        font-size: 72px;
+    }
+
+    @include phones {
+        font-size: 50px;
+        letter-spacing: -1px;
+    }
+
+    &--hero {
+        margin-bottom: 0;
+
+        @include phones {
+            font-size: 58px;
+            
+        }
+    }
 
     &--order {
-    text-align: center;  
-    margin-bottom: 4%;     
+        text-align: center;
+        
+        @include tablets {
+            white-space: normal;
+            line-height: rem(60px);
+        }
     }
-    
+
     &--color-black {
         color: $black;
-        margin-bottom: 4%;
-        text-align: center;
+        text-align: center;       
     }
-
-  
 }
-

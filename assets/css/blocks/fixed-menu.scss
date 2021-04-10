@@ -3,7 +3,7 @@
 	top: 90px;
 	right: 40px;
 
-	@include tablet-landscape-up {
+	@include tablets {
 		display: none;
 	}
 }

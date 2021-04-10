@@ -11,6 +11,10 @@
     background: rgba($color: #2f3234, $alpha: 0.9);
     display: flex;
 
+    @include tablets {
+    width: 100%;
+    }
+
 }
 
 .team__content {
@@ -20,6 +24,12 @@
     justify-content: flex-start;
     color: $white;
     padding: 15% 10%;
+
+    @include tablets {
+        justify-content: center;
+        text-align: center;
+        }
+
 }
 
 .team__list {
@@ -68,6 +78,10 @@
         margin-right: rem(20px);
     }
 
+    @include tablets {
+        justify-content: center;
+        font-size: rem(24px);
+    }
     
 }
 
@@ -78,6 +92,10 @@
     display: flex;
     overflow: hidden;
     height: 0; 
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .team__item-pic {
@@ -87,6 +105,10 @@
     height: rem(100px);
     flex-shrink: 0;
     margin: 0 rem(20px);
+
+    @include tablets {
+        margin: 0 0 rem(20px) 0;
+    }
 }
 
 .team__item-img {
@@ -102,4 +124,10 @@
 
 .team__item-text {
     width: 80%;
+
+    
+    @include tablets {
+        margin: 0 auto;
+    }
+    
 }

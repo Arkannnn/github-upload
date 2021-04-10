@@ -8,9 +8,8 @@ $orange: #f08c33;
 $green: #00FF00;
 
 //breakpoints
-$phone: 480px;
-$tablet-vert: 600px;
-$tablet-hor: 900px;
+$phones: 480px;
+$tablets: 768px;
 
 
 // normalize
@@ -34,7 +33,7 @@ $tablet-hor: 900px;
 @import "blocks/title.scss";
 @import "blocks/best.scss";
 @import "blocks/reviews.scss";
-@import "blocks/form.scss";
+@import "blocks/order.scss";
 @import "blocks/team.scss";
 @import "blocks/fixed-menu.scss";
 

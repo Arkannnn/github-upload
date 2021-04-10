@@ -1,27 +1,22 @@
 html {
     font-size: 16px;
 
-    @include tablet-landscape-up {
+    @include tablets {
         font-size: rem(14px);
     }
 
-    @include tablet-portrait-up {
+    @include phones {
         font-size: rem(13px);
     }
-
-    @include phone-only {
-        font-size: rem(12px);
-    }
-}
-   
-
-   
-
-html, body {
-    height: 100%;    
 }
 
-*{
+
+html,
+body {
+    height: 100%;
+}
+
+* {
     box-sizing: border-box;
 }
 
@@ -33,11 +28,16 @@ body {
     color: $black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    position: relative;      
+    position: relative;
 }
 
 // tag style reset
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     font-weight: normal;
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 ul {
     padding: 0;
     margin: 0;
-    
+
     li {
         list-style: none;
     }
@@ -55,7 +55,7 @@ p {
     padding: 0;
     margin: 0;
 }
- 
+
 .wrapper {
     position: relative;
     min-height: 100%;
@@ -70,22 +70,17 @@ p {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding: 0 rem(20px);
+    width: 95%;
     position: relative;
 
-    @include tablet-landscape-up {
-        //padding: 0 rem(10px);
-        //вместо паддингов можно сделать ширину в процентах, будет порезиновей
-        padding: 0;
-        width: 95%;
-    }
-
     &--without-align {
-        justify-content: initial;        
-    }    
+        justify-content: initial;
+
+        @include tablets {
+            justify-content: space-between;
+        }
+    }
 }
-
-
 
 .section {
     height: 100vh;

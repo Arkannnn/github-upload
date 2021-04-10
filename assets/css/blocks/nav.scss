@@ -1,7 +1,7 @@
 .nav {
     margin-right: rem(15px);
 
-    @include tablet-landscape-up {
+    @include tablets {
         display: none;
     }
 }
@@ -25,6 +25,7 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 
     &:hover {
         color: $green;

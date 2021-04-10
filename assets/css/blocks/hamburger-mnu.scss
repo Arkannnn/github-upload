@@ -2,7 +2,7 @@
     position: relative;
     display: none;
     margin-left: rem(30px) ;
-    @include tablet-landscape-up {
+    @include tablets {
         display: flex;
     }
 }
