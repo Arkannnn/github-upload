@@ -56,6 +56,11 @@ p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: initial;    
+}
+
 .wrapper {
     position: relative;
     min-height: 100%;
@@ -64,7 +69,6 @@ p {
 
 .container {
     margin: 0 auto;
-    width: 100%;
     max-width: 940px;
     display: flex;
     flex-direction: column;
@@ -80,10 +84,18 @@ p {
             justify-content: space-between;
         }
     }
+    // &--footer {
+    //     justify-content: initial;
+    //     height: initial;
+    // }
 }
 
 .section {
     height: 100vh;
-    min-height: rem(650px);
+    min-height: 650px;
     position: relative;
+
+    @include tablets{
+        min-height: auto;
+    }
 }

@@ -24,18 +24,19 @@ $tablets: 768px;
 @import "_misc/layout.scss";
 
 // blocks
-@import "blocks/hero.scss";
+@import "blocks/section-hero.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/hamburger-mnu.scss";
 @import "blocks/btn.scss";
 @import "blocks/to-next-section.scss";
 @import "blocks/title.scss";
-@import "blocks/best.scss";
-@import "blocks/team.scss";
-@import "blocks/menu.scss";
-@import "blocks/reviews.scss";
-@import "blocks/order.scss";
+@import "blocks/section-best.scss";
+@import "blocks/section-team.scss";
+@import "blocks/section-menu.scss";
+@import "blocks/section-reviews.scss";
+@import "blocks/section-order.scss";
+@import "blocks/section-map.scss";
 
 @import "blocks/fixed-menu.scss";
 
