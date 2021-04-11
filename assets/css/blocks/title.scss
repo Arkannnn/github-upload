@@ -27,6 +27,19 @@
         }
     }
 
+    &--menu {
+        color: $white;  
+        padding: 2%; 
+        
+        @include tablets {
+            display: none;
+        }
+    }
+    
+  
+
+   
+
     &--order {
         text-align: center;
         

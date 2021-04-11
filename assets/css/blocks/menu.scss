@@ -1,0 +1,94 @@
+.menu {
+    background: url(../img/background/hero-bg.jpg) center center / cover no-repeat;
+    display: flex;  
+    }
+
+.title--menu-item { 
+    color: $white;
+    font-size: rem(40px);
+    line-height: 1.2;
+    writing-mode: vertical-lr;
+    text-shadow: $black 1px 1px 0, $black -1px -1px 0, 
+    $black -1px 1px 0, $black 1px -1px 0;  //обводка 
+} 
+.menu__item-left {
+    transform: rotate(180deg);
+    background: rgba(0, 0, 0, 0.7);  
+    padding: rem(40px) rem(5px) 0;    
+}
+
+.menu__item-right {
+    background: rgba(47, 50, 52, 0.9);
+    padding: 6% 7%;
+
+   
+    
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.menu__text {
+    display: none; 
+    color: $white;
+    
+    @include phones {
+        padding: 8% 8%;
+    }      
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {    
+    display: flex;
+    border-left: 2px solid $yellow; /* Параметры границы */
+
+    &--veg{
+        background: url(../img/content/menu/veg.jpg) center center / cover no-repeat;
+    }
+    &--vegan{
+        background: url(../img/content/menu/vegan.jpg) center center / cover no-repeat;
+    }
+    &--fresh{
+        background: url(../img/content/menu/leaf.jpg) center center / cover no-repeat;
+    }
+
+    &--active {
+        .menu__text {
+            display: initial;   
+        }
+        .title--menu-item {
+            color: $yellow;            
+        } 
+        @include phones {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;  
+            border: none;  
+        }
+    }  
+}
+
+
+.btn-close {
+    width: 18px;
+    height: 18px;    
+    display: none;
+
+    @include phones {
+        display: block;
+        align-self: flex-end;
+    }
+}
+
+.close-img {
+    width: 100%;
+    height: 100%;
+}
+
